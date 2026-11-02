@@ -1,0 +1,25 @@
+[package]
+name = "gosavetool"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.70"
+description = "Parse, convert, shift and repair SRT and WebVTT subtitles; word count, social media character limits, Title Case and slugs. No dependencies, with a CLI."
+homepage = "https://www.gosavetool.com/"
+repository = "https://github.com/mitolocya/gosavetool-rs"
+documentation = "https://docs.rs/gosavetool"
+readme = "README.md"
+license = "MIT"
+authors = ["GoSaveTool <https://www.gosavetool.com/>"]
+keywords = ["subtitles", "srt", "webvtt", "word-count", "slug"]
+categories = ["text-processing", "multimedia", "command-line-utilities"]
+exclude = ["PUBLISH.md"]
+
+[lib]
+name = "gosavetool"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gosavetool"
+path = "src/main.rs"
+
+[dependencies]
